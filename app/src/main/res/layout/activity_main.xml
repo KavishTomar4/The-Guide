@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THE GUIDE"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/title_font"
+        android:textColor="#000000"
+        />
+
+     <TextView
+         android:id="@+id/smallHeading"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/mainHeading"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="10dp"
+         android:text="The Merchant Of Venice &amp; The Tempest"
+         android:textColor="#000000"
+         android:fontFamily="@font/galadaregular"
+
+         />
+
+
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Kavish Tomar"
+        android:textSize="20dp"
+        android:textColor="#5e5e5e"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

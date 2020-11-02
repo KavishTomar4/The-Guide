@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="50dp"
+    app:cardCornerRadius="30dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/parentRel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/upperRel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/cover"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/title_font"
+                android:layout_below="@id/cover"
+                android:layout_margin="13dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/downArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/down_arrow"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/bookName"
+                android:visibility="visible"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upperRel"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Description"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="17dp"
+                />
+
+            <ImageView
+                android:id="@+id/upArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/description"
+                android:src="@drawable/up_arrow"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
